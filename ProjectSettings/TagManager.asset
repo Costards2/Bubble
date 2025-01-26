@@ -54,5 +54,8 @@ TagManager:
   - name: Camera Front
     uniqueID: 2580326571
     locked: 0
+  - name: LoliPops
+    uniqueID: 1614889745
+    locked: 0
   m_RenderingLayers:
   - Default

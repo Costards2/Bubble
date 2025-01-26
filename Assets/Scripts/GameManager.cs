@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,8 +17,25 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        StartGame();
+
     }
 
 
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape)) 
+        {
+            SceneManager.LoadScene("Menu");
+        } 
+    }
+
+    public void StartGame()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Time.timeScale = 1f;
+    }
 
 }

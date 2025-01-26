@@ -310,7 +310,7 @@ public class Bubble : MonoBehaviour
         {
             LittleUp();
         }
-        else
+        else if(collision.tag == "Enemy")
         {
             // Make a method for this 
             death = true;

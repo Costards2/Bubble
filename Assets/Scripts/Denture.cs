@@ -10,7 +10,8 @@ public class Denture : MonoBehaviour
     private float right;
     private float left;
     private SpriteRenderer sprite;
-    private Collider2D collider2D;
+    public  Collider2D collider2D;
+    public  Collider2D trigger;
     private Rigidbody2D rb;
 
     private enum EnemyState
@@ -83,8 +84,9 @@ public class Denture : MonoBehaviour
         
         if (collision.CompareTag("Player") && collision.gameObject.GetComponent<Bubble>().bubbleTrouble == false)
         {
-            currentState = EnemyState.Dead;
             collider2D.enabled = false;
+            trigger.enabled = false;
+            currentState = EnemyState.Dead;
 
             AudioManager.instance.PlaySFX(deathClip);
 
