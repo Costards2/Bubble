@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -12,8 +13,8 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
+  - Player
+  - CamLimits
   - 
   - 
   - 
@@ -40,6 +41,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 'Ground '
+    uniqueID: 3136390135
+    locked: 0
+  - name: Enemies
+    uniqueID: 3523926659
+    locked: 0
+  - name: 'Player '
+    uniqueID: 3931739471
+    locked: 0
+  - name: Camera Front
+    uniqueID: 2580326571
     locked: 0
   m_RenderingLayers:
   - Default
